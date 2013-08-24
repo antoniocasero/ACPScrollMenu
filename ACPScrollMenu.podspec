@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "ACPScrollMenu is a easy and fully customizable scrollable menu"
   s.homepage     = "https://github.com/antoniocasero/ACPScrollMenu"
-  s.screenshots  = "https://github.com/antoniocasero/ACPScrollMenu/blob/master/Screenshot1.png"
+  s.screenshots  = "https://github.com/antoniocasero/ACPScrollMenu/blob/master/sc2.png"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Antonio Casero" => "anto.casero@gmail.com" }
   s.source       = { :git => "https://github.com/antoniocasero/ACPScrollMenu.git", :tag => '1.0.0' }
