@@ -18,7 +18,7 @@ Fully customizable, item, colors, padding, backgrounds, animations&behaviour!
 
 [*$ git clone git@github.com:antoniocasero/ACPScrollMenu.git*]()
 
-* Or just drag this class to your project and import `ACPScrollMenu` to your viewcontroller.
+* Or just drag this component to your project and import `ACPScrollMenu` to your viewcontroller.
 
 ## Implementing
 
@@ -29,15 +29,13 @@ Set your view as `ACPScrollMenu` class
 Set your items, and call this method
 
 ```
-- (void)setUpACPScrollMenu:(NSArray *)menuItems
-
+- (void)setUpACPScrollMenu:(NSArray *)menuItems;
 ```
 
 Fill the delegate method:
 
 ```
--(void)scrollMenu:(ACPItem *)menu didSelectIndex:(NSInteger)selectedIndex
-
+-(void)scrollMenu:(ACPItem *)menu didSelectIndex:(NSInteger)selectedIndex;
 ```
 
 ## Compatibility
