@@ -2,7 +2,7 @@
 
 This control was designed for a fast implementation of scrollable menu. You just need to add this component directly to the storyboard or your xib file and implement the delegate methods.
 
-Fully customizable, item, colors, padding, backgrounds, animations&behaviour!
+Fully customizable, items, colors, padding, backgrounds, animations&behaviour!
 
 ![](sc2.png)
 
@@ -35,7 +35,20 @@ Set your items, and call this method
 Fill the delegate method:
 
 ```
--(void)scrollMenu:(ACPItem *)menu didSelectIndex:(NSInteger)selectedIndex;
+-(void)scrollMenu:(ACPScrollMenu *)menu didSelectIndex:(NSInteger)selectedIndex;
+```
+
+###Items
+
+To initialize your items:
+
+```
+- (id)initACPItem:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage andLabel:(NSString *)labelItem;
+```
+if you want a custom highlighted state for you item
+
+```
+- (void)setHighlightedBackground:(UIImage *)backgroundImageHightlighted iconHighlighted:(UIImage *)iconImageHighlighted textColorHighlighted:(UIColor *)texColorHighlighted
 ```
 
 ## Compatibility
