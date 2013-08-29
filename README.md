@@ -65,3 +65,7 @@ if you want a custom highlighted state for you item
 
 [1]:	http://www.cocoapods.org
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/antoniocasero/acpscrollmenu/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
