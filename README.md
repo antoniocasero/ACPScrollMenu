@@ -40,12 +40,19 @@ Fill the delegate method:
 
 ###Items
 
-To initialize your items:
+To initialize your items, choose between delegate methods or blocks:
+
+* If you like blocks, you can initialize the items with:
+
+```
+- (id)initACPItem:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage label:(NSString *)labelItem andAction:(actionBlock)block;
+```
+* If you want to use delegate methods, you can use:
 
 ```
 - (id)initACPItem:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage andLabel:(NSString *)labelItem;
 ```
-if you want a custom highlighted state for you item
+* if you want a custom highlighted state for you item
 
 ```
 - (void)setHighlightedBackground:(UIImage *)backgroundImageHightlighted iconHighlighted:(UIImage *)iconImageHighlighted textColorHighlighted:(UIColor *)texColorHighlighted
