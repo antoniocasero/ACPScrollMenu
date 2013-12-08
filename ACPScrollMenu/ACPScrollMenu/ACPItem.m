@@ -35,6 +35,18 @@ static inline CGRect ScaleRect(CGRect rect, float n) {
 }
 
 
+- (id)initACPItem:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage label:(NSString *)labelItem andAction:(actionBlock)block {
+	self = [[[NSBundle mainBundle] loadNibNamed:@"ACPItem" owner:self options:nil] lastObject];
+	if (self) {
+		// Initialization code
+		self.bgImage.image = backgroundImage;
+		self.labelItem.text = labelItem;
+		self.iconImage.image = iconImage;
+        self.block = block;
+	}
+	return self;
+}
+
 # pragma mark -
 # pragma mark UIView methods
 # pragma mark -

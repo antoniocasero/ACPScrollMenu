@@ -19,22 +19,26 @@
 
 @interface ACPItem : UIView
 
+typedef void(^actionBlock)(ACPItem *item);
+
 typedef enum {
+    
 	ACPImageItem,
 	ACPLabelItem,
 	ACPImageAndLabeItem
+    
 } ACPItemType;
 
 @property (nonatomic, weak) id <ACPItemDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 @property (weak, nonatomic) IBOutlet UILabel *labelItem;
 @property (weak, nonatomic) IBOutlet UIImageView *bgImage;
-
+@property (nonatomic, copy) actionBlock block;
 @property (assign, nonatomic) BOOL highlighted;
 
 
-/*
- 	Initialization of the item inside of the scrollview
+/**
+ 	Initialization of the item inside of the scrollview - using delegate methods
  
  	@param	backgroundImage	The background image
  	@param	iconImage	Icon of the item. Could be nil if you dont want an icon
@@ -44,7 +48,20 @@ typedef enum {
  */
 - (id)initACPItem:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage andLabel:(NSString *)labelItem;
 
-/*
+
+/**
+ *  Initialization of the item inside of the scrollview - using blocks
+ *
+ *  @param backgroundImage The background image
+ *  @param iconImage       Icon of the item. Could be nil if you dont want an icon
+ *  @param labelItem       Text of the item. Could be nil if you only want the icon
+ *  @param block           Block Action
+ *
+ *  @return Item
+ */
+- (id)initACPItem:(UIImage *)backgroundImage iconImage:(UIImage *)iconImage label:(NSString *)labelItem andAction:(actionBlock)block;
+
+/**
   Implement this method if you want a custom highlighted state for you item
  */
 

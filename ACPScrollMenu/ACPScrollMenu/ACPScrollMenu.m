@@ -98,7 +98,9 @@ static CGFloat const kScrollViewItemMarginWidth = 5.0f;
     
 	[self startAnimation:item];
     
-    
+    if(item.block) {
+        item.block(item);
+    }
 	if ([_delegate respondsToSelector:@selector(scrollMenu:didSelectIndex:)]) {
 		[_delegate scrollMenu:(id)self didSelectIndex:item.tag - 1000];
 	}
