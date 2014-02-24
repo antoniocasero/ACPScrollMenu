@@ -11,6 +11,6 @@
 
 @interface ViewController : UIViewController <ACPScrollDelegate>
 
-@property (weak, nonatomic) IBOutlet ACPScrollMenu *ACPScrollMenu;
+@property (weak, nonatomic) IBOutlet ACPScrollMenu *scrollMenu;
 
 @end

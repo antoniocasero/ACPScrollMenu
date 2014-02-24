@@ -30,7 +30,7 @@
 		NSString *imgName = [NSString stringWithFormat:@"%d.png", i];
 		NSString *imgSelectedName = [NSString stringWithFormat:@"%ds.png", i];
         
-		//You can choose between work with delegates or with blocks! up to you!
+		//You can choose between work with delegates or with blocks
 		//This sample project has commented the delegate functionality
         
 		//ACPItem *item = [[ACPItem alloc] initACPItem:[UIImage imageNamed:@"bg.png"] iconImage:[UIImage imageNamed:imgName] andLabel:@"Test"];
@@ -50,11 +50,11 @@
 		[array addObject:item];
 	}
     
-	[_ACPScrollMenu setUpACPScrollMenu:array];
+	[_scrollMenu setUpACPScrollMenu:array];
     
 	//We choose an animation when the user touch the item (you can create your own animation)
-	[_ACPScrollMenu setAnimationType:ACPZoomOut];
-	_ACPScrollMenu.delegate = self;
+	[_scrollMenu setAnimationType:ACPZoomOut];
+	_scrollMenu.delegate = self;
 }
 
 //- (void)scrollMenu:(ACPItem *)menu didSelectIndex:(NSInteger)selectedIndex {
