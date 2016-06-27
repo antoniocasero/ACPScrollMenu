@@ -1,5 +1,7 @@
 # ACPScrollMenu
 
+**⚠️ Important note! This library is not maintained anymore. Feel free to keep it updated by yourself, either forking or asking for being the contributor.**
+
 This control was designed for a fast implementation of scrollable menu. You just need to add this component directly to the storyboard or your xib file and implement the delegate methods.
 
 Fully customizable, items, colors, padding, backgrounds, animations&behaviour!
