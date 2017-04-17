@@ -40,7 +40,7 @@ Fill the delegate method:
 -(void)scrollMenu:(ACPScrollMenu *)menu didSelectIndex:(NSInteger)selectedIndex;
 ```
 
-###Items
+### Items
 
 To initialize your items, choose between delegate methods or blocks:
 
